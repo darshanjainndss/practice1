@@ -16,8 +16,9 @@
 // Simple Definition
 
 import fs from'fs'
-const data = fs.writeFileSync('text1.txt','this is new fileasasas')
+///write in the file
+const data = fs.writeFileSync('text1.txt','this is new fileasasas')   //Create .txt if not exists   Overwrite if already exists
 console.log(data)
-
+// read from the file
 const data2=fs.readFileSync('text1.txt','utf-8')
 console.log(data2)
