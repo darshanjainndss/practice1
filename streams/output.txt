@@ -1,2 +1,5 @@
 Hello World
-This is stream writing
+This is Node.js Stream Example
+Streams process data in chunks
+
+Appending new line using stream
