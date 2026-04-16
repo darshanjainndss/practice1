@@ -96,3 +96,34 @@ bool twosum(int arr[], int size, int target){
     return false;
 
 ## }
+
+
+
+# program=>1
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i;
+
+    cout << "Enter a number: ";
+    cin >> i;
+
+    // 🔴 ISSUE:
+    // If user enters text (like "purnav"), cin fails
+    // and 'i' does NOT get a valid value
+
+    if (cin.fail()) {
+        cout << "Invalid input! Please enter a valid number." << endl;
+        return 0; // stop program
+    }
+
+    // ✅ If input is valid, this runs correctly
+    if (i % 2 == 0) {
+        cout << "Number is even: " << i << endl;
+    } else {
+        cout << "Number is odd: " << i << endl;
+    }
+
+    return 0;
+}

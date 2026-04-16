@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
     "dev": "nodemon server.js",
-    "abc":"nodemon server.js"
+    "abc":"nodemon server.js",
+    "new":"nodemon practice-session2/server2.js"
   },
   "dependencies": {
     "dotenv": "^17.2.4",
