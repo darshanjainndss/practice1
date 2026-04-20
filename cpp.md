@@ -97,14 +97,13 @@ bool twosum(int arr[], int size, int target){
 
 ## }
 
-
-
 # program=>1
+
 #include <iostream>
 using namespace std;
 
 int main() {
-    int i;
+int i;
 
     cout << "Enter a number: ";
     cin >> i;
@@ -126,4 +125,41 @@ int main() {
     }
 
     return 0;
+
+}
+
+# program:2
+
+#include <iostream>
+using namespace std;
+
+// 🔹 Function Declaration (prototype)
+int greatest(int a, int b, int c);
+
+int main() {
+int a, b, c;
+
+    cout << "Enter three numbers: ";
+    cin >> a >> b >> c;
+
+    // 🔹 Function Call
+    int ans = greatest(a, b, c);
+
+    cout << "Greatest number is: " << ans;
+
+    return 0;
+
+}
+
+// 🔹 Function Definition
+int greatest(int a, int b, int c) {
+if (a >= b && a >= c) {
+return a;
+}
+else if (b >= a && b >= c) {
+return b;
+}
+else {
+return c;
+}
 }
